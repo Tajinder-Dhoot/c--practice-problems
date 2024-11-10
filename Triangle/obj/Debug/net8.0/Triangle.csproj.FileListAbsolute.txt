@@ -1,0 +1,14 @@
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/bin/Debug/net8.0/Triangle
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/bin/Debug/net8.0/Triangle.deps.json
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/bin/Debug/net8.0/Triangle.runtimeconfig.json
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/bin/Debug/net8.0/Triangle.dll
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/bin/Debug/net8.0/Triangle.pdb
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/obj/Debug/net8.0/Triangle.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/obj/Debug/net8.0/Triangle.AssemblyInfoInputs.cache
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/obj/Debug/net8.0/Triangle.AssemblyInfo.cs
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/obj/Debug/net8.0/Triangle.csproj.CoreCompileInputs.cache
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/obj/Debug/net8.0/Triangle.dll
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/obj/Debug/net8.0/refint/Triangle.dll
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/obj/Debug/net8.0/Triangle.pdb
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/obj/Debug/net8.0/Triangle.genruntimeconfig.cache
+/Volumes/Cipher/git/C#/PracticeProblems/Triangle/obj/Debug/net8.0/ref/Triangle.dll

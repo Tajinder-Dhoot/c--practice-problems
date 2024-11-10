@@ -1,0 +1,14 @@
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/bin/Debug/net8.0/GettingStarted
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/bin/Debug/net8.0/GettingStarted.deps.json
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/bin/Debug/net8.0/GettingStarted.runtimeconfig.json
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/bin/Debug/net8.0/GettingStarted.dll
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/bin/Debug/net8.0/GettingStarted.pdb
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/obj/Debug/net8.0/GettingStarted.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/obj/Debug/net8.0/GettingStarted.AssemblyInfoInputs.cache
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/obj/Debug/net8.0/GettingStarted.AssemblyInfo.cs
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/obj/Debug/net8.0/GettingStarted.csproj.CoreCompileInputs.cache
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/obj/Debug/net8.0/GettingStarted.dll
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/obj/Debug/net8.0/refint/GettingStarted.dll
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/obj/Debug/net8.0/GettingStarted.pdb
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/obj/Debug/net8.0/GettingStarted.genruntimeconfig.cache
+/Volumes/Cipher/git/C#/PracticeProblems/GettingStarted/obj/Debug/net8.0/ref/GettingStarted.dll

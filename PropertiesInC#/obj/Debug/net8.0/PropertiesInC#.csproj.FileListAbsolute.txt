@@ -1,0 +1,14 @@
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/obj/Debug/net8.0/PropertiesInC#.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/obj/Debug/net8.0/PropertiesInC#.AssemblyInfoInputs.cache
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/obj/Debug/net8.0/PropertiesInC#.AssemblyInfo.cs
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/obj/Debug/net8.0/PropertiesInC#.csproj.CoreCompileInputs.cache
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/bin/Debug/net8.0/PropertiesInC#
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/bin/Debug/net8.0/PropertiesInC#.deps.json
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/bin/Debug/net8.0/PropertiesInC#.runtimeconfig.json
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/bin/Debug/net8.0/PropertiesInC#.dll
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/bin/Debug/net8.0/PropertiesInC#.pdb
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/obj/Debug/net8.0/PropertiesInC#.dll
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/obj/Debug/net8.0/refint/PropertiesInC#.dll
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/obj/Debug/net8.0/PropertiesInC#.pdb
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/obj/Debug/net8.0/PropertiesInC#.genruntimeconfig.cache
+/Volumes/Cipher/git/C#/PracticeProblems/PropertiesInC#/obj/Debug/net8.0/ref/PropertiesInC#.dll
