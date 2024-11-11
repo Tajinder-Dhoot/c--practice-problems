@@ -1,0 +1,15 @@
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/obj/Debug/net8.0/ComputedProperties.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/obj/Debug/net8.0/ComputedProperties.AssemblyInfoInputs.cache
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/obj/Debug/net8.0/ComputedProperties.AssemblyInfo.cs
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/obj/Debug/net8.0/ComputedProperties.csproj.CoreCompileInputs.cache
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/obj/Debug/net8.0/ComputedProperties.sourcelink.json
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/bin/Debug/net8.0/ComputedProperties
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/bin/Debug/net8.0/ComputedProperties.deps.json
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/bin/Debug/net8.0/ComputedProperties.runtimeconfig.json
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/bin/Debug/net8.0/ComputedProperties.dll
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/bin/Debug/net8.0/ComputedProperties.pdb
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/obj/Debug/net8.0/ComputedProperties.dll
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/obj/Debug/net8.0/refint/ComputedProperties.dll
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/obj/Debug/net8.0/ComputedProperties.pdb
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/obj/Debug/net8.0/ComputedProperties.genruntimeconfig.cache
+/Volumes/Cipher/git/C#/PracticeProblems/ComputedProperties/obj/Debug/net8.0/ref/ComputedProperties.dll
