@@ -1,0 +1,15 @@
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/bin/Debug/net8.0/ObjectInitializers
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/bin/Debug/net8.0/ObjectInitializers.deps.json
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/bin/Debug/net8.0/ObjectInitializers.runtimeconfig.json
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/bin/Debug/net8.0/ObjectInitializers.dll
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/bin/Debug/net8.0/ObjectInitializers.pdb
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/obj/Debug/net8.0/ObjectInitializers.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/obj/Debug/net8.0/ObjectInitializers.AssemblyInfoInputs.cache
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/obj/Debug/net8.0/ObjectInitializers.AssemblyInfo.cs
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/obj/Debug/net8.0/ObjectInitializers.csproj.CoreCompileInputs.cache
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/obj/Debug/net8.0/ObjectInitializers.sourcelink.json
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/obj/Debug/net8.0/ObjectInitializers.dll
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/obj/Debug/net8.0/refint/ObjectInitializers.dll
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/obj/Debug/net8.0/ObjectInitializers.pdb
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/obj/Debug/net8.0/ObjectInitializers.genruntimeconfig.cache
+/Volumes/Cipher/git/C#/PracticeProblems/ObjectInitializers/obj/Debug/net8.0/ref/ObjectInitializers.dll
