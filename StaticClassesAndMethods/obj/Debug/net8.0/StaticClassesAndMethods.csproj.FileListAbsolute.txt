@@ -1,0 +1,15 @@
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/obj/Debug/net8.0/StaticClassesAndMethods.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/obj/Debug/net8.0/StaticClassesAndMethods.AssemblyInfoInputs.cache
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/obj/Debug/net8.0/StaticClassesAndMethods.AssemblyInfo.cs
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/obj/Debug/net8.0/StaticClassesAndMethods.csproj.CoreCompileInputs.cache
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/obj/Debug/net8.0/StaticClassesAndMethods.sourcelink.json
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/bin/Debug/net8.0/StaticClassesAndMethods
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/bin/Debug/net8.0/StaticClassesAndMethods.deps.json
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/bin/Debug/net8.0/StaticClassesAndMethods.runtimeconfig.json
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/bin/Debug/net8.0/StaticClassesAndMethods.dll
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/bin/Debug/net8.0/StaticClassesAndMethods.pdb
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/obj/Debug/net8.0/StaticClassesAndMethods.dll
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/obj/Debug/net8.0/refint/StaticClassesAndMethods.dll
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/obj/Debug/net8.0/StaticClassesAndMethods.pdb
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/obj/Debug/net8.0/StaticClassesAndMethods.genruntimeconfig.cache
+/Volumes/Cipher/git/C#/PracticeProblems/StaticClassesAndMethods/obj/Debug/net8.0/ref/StaticClassesAndMethods.dll
