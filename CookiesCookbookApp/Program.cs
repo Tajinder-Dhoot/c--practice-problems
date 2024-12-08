@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Recipes;
+using Ingredients;
 
 namespace CookiesCookbookApp
 {
@@ -6,80 +7,46 @@ namespace CookiesCookbookApp
     {
         public static void Main(string[] args)
         {
-            List<int> userInput = [1, 3, 4];
-            var ingredients = new List<Ingredient>();
+            Console.WriteLine("Create a new cookie recipe! Available ingredients are:");
 
-            ingredients.Add(new WheatFlour());
+            // print all ingredients
+            IEnumerable<Ingredient> availableIngredients = [
+                new WheatFlour(),
+                new CoconutFlour(),
+                new Butter(),
+                new Chocolate()
+            ];
 
-            var recipe1 = new Recipe([new WheatFlour(), new CoconutFlour()]);
-        }
-    }
+            foreach (Ingredient ingredient in availableIngredients) {
+                Console.WriteLine(ingredient.Id + ". " + ingredient.Name);
+            }
 
-    public class Recipe
-    {
-        public IEnumerable<Ingredient> Ingredients { get; }
-        public Recipe(IEnumerable<Ingredient> ingredients)
-        {
-            Ingredients = ingredients;
-        }
-    }
+            // select ingredients for a new recipe
+            Console.WriteLine("Add an ingredient by its ID or type anything else if finished.");
+            string? input = Console.ReadLine();
 
-    public class Ingredient
-    {
-        public Ingredient()
-        {
+            var idsSelectedByUser = new List<int>();
+            while (int.TryParse(input, out int inputId))
+            {
+                if(inputId > 0 && inputId <= 4)
+                {
+                    Console.WriteLine("valid input");
+                    idsSelectedByUser.Add(inputId);
+                }
+                input = Console.ReadLine();
+            }
 
-        }
-
-        public virtual int Id { get; }
-
-        public virtual string Name { get; } = "An Ingredient";
-
-        public virtual string PreparationInstructions { get; } = " ..."
-    }
-
-    public class WheatFlour : Ingredient
-    {
-        public WheatFlour()
-        {
+            IEnumerable<Ingredient> ingredientsSelected = availableIngredients.Where(ingredient =>  idsSelectedByUser.Contains(ingredient.Id));
             
+            // print new recipe
+            if(ingredientsSelected.Any())
+            {
+                new Recipe(ingredientsSelected).StepsToString();
+            }
+
+            //press any key to exit
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadLine();
         }
-
-        public override int Id { get; } = 1;
-
-        public override string Name { get; } = "Wheat Flour";
-
-        public override string PreparationInstructions { get; } = "Sieve, Add to other ingredients";
-    }
-
-    public class CoconutFlour : Ingredient
-    {
-        public CoconutFlour()
-        {
-            
-        }
-        public override int Id { get; } = 2;
-
-        public override string? Name { get; } = "Coconut Flour";
-
-        public override string PreparationInstructions { get; } = "Sieve, Add to other ingredients";
-    }
-
-    public class Butter : Ingredient
-    {
-        public override int Id { get; } = 3;
-
-        public override string? Name { get; } = "Butter";
-
-        public override string PreparationInstructions { get; } = "Melt on low heat. Add to other ingredients";
-    }
-
-    public class Chocolate : Ingredient
-    {
-        public override int Id { get; } = 4;
-
-        public override string Name { get; } = "Chocolate";
-
-        public override string PreparationInstructions { get; } = "Melt in a watter bath. Add to other ingredients";
     }
 }
