@@ -10,11 +10,8 @@ public class Recipe
         Ingredients = ingredients;
     }
 
-    public void StepsToString()
+    public List<string> StepsToString()
     {
-        foreach (var ingredient in Ingredients)
-        {
-            Console.WriteLine($"{ingredient.Name}.{ingredient.PreparationInstructions}");
-        }
+        return Ingredients.Select(ingredient => $"{ingredient.Name}.{ingredient.PreparationInstructions}").ToList();
     }
 }
