@@ -1,5 +1,6 @@
-﻿using Recipes;
+﻿using DataAccess;
 using Ingredients;
+using UserInteraction;
 
 namespace CookiesCookbookApp
 {
@@ -7,9 +8,7 @@ namespace CookiesCookbookApp
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Create a new cookie recipe! Available ingredients are:");
 
-            // print all ingredients
             IEnumerable<Ingredient> availableIngredients = [
                 new WheatFlour(),
                 new CoconutFlour(),
@@ -17,9 +16,12 @@ namespace CookiesCookbookApp
                 new Chocolate()
             ];
 
-            foreach (Ingredient ingredient in availableIngredients) {
-                Console.WriteLine(ingredient.Id + ". " + ingredient.Name);
-            }
+            // print existing recipes
+            DisplayToUser.PrintSavedRecipesToConsole(availableIngredients);
+
+            // print all ingredients
+            Console.WriteLine("Create a new cookie recipe! Available ingredients are:");
+            DisplayToUser.PrintIngredientsToConsole(availableIngredients);
 
             // select ingredients for a new recipe
             Console.WriteLine("Add an ingredient by its ID or type anything else if finished.");
@@ -41,7 +43,17 @@ namespace CookiesCookbookApp
             // print new recipe
             if(ingredientsSelected.Any())
             {
-                new Recipe(ingredientsSelected).StepsToString();
+                Console.WriteLine("recipe added:");
+                DisplayToUser.PrintRecipeToConsole(ingredientsSelected);
+
+                // store recipe to file
+                string recipeIds = String.Join(',', idsSelectedByUser);
+                string savedRecipesFilepath = "./DataRepository/recipes.txt";
+                WriteFile.Write(savedRecipesFilepath, recipeIds);
+            }
+            else
+            {
+                Console.WriteLine("No ingredients have been selected. Recipe will not be saved.");
             }
 
             //press any key to exit
