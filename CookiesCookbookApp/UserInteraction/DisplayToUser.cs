@@ -1,6 +1,8 @@
 using DataAccess;
 using Recipes;
 using Ingredients;
+using Enums;
+using System.Text.Json;
 
 namespace UserInteraction;
 
@@ -34,11 +36,11 @@ public class DisplayToUser
         }
     }
 
-    public static void PrintSavedRecipesToConsole(IEnumerable<Ingredient> availableIngredients)
+    public static void PrintSavedRecipesToConsoleFromTextFile(IEnumerable<Ingredient> availableIngredients)
     {
         Console.WriteLine("Exisiting recipes are:");
         string savedRecipesFilepath = "./DataRepository/recipes.txt";
-        List<string>? savedRecipes = ReadFile.Read(savedRecipesFilepath);
+        List<string>? savedRecipes = ReadFile.AllLines(savedRecipesFilepath);
         if(savedRecipes != null)
         {
             var recipesCounter = 1;
@@ -52,6 +54,54 @@ public class DisplayToUser
                 PrintToConsole(recipeSteps);
                 recipesCounter +=1;
             }
+        }
+    }
+
+    public static void PrintSavedRecipesToConsoleFromJsonFile(IEnumerable<Ingredient> availableIngredients)
+    {
+        Console.WriteLine("Exisiting recipes are:");
+        string savedRecipesFilepath = "./DataRepository/recipes.json";
+        string? savedRecipesJsonData = ReadFile.AsText(savedRecipesFilepath);
+        List<string?> savedRecipes = [];
+        try
+        {
+            savedRecipes = JsonSerializer.Deserialize<List<string>>(savedRecipesJsonData);
+            
+        }
+        catch (System.ArgumentNullException ex)
+        {
+            Console.WriteLine("argument cannot be null for serialozation: ", ex.Message);
+        }
+        catch (System.Exception ex)
+        {
+            Console.WriteLine("unexpected error occured: ", ex.Message);
+        }
+        if(savedRecipes != null)
+        {
+            var recipesCounter = 1;
+            foreach (var savedRecipe in savedRecipes)
+            {
+                List<string> recipeIngredientIds = [.. savedRecipe.Split(',')];
+                IEnumerable<Ingredient> recipeIngredients = availableIngredients
+                    .Where(ingredient => recipeIngredientIds.Contains(ingredient.Id.ToString()));
+                Console.WriteLine($"*****{recipesCounter}*****");
+                var recipe = new Recipe(recipeIngredients);
+                var recipeSteps = recipe.StepsToString();
+                PrintToConsole(recipeSteps);
+                recipesCounter +=1;
+            }
+        }
+    }
+
+    public static void PrintSavedRecipesToConsole(IEnumerable<Ingredient> availableIngredients, FileExtensions fileType)
+    {
+        if(fileType.Equals(FileExtensions.TXT))
+        {
+            PrintSavedRecipesToConsoleFromTextFile(availableIngredients);
+        }
+        else if(fileType.Equals(FileExtensions.JSON))
+        {
+            PrintSavedRecipesToConsoleFromJsonFile(availableIngredients);
         }
     }
 
