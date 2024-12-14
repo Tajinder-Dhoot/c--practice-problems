@@ -1,4 +1,5 @@
 ﻿using DataAccess;
+using Enums;
 using Ingredients;
 using UserInteraction;
 
@@ -8,6 +9,8 @@ namespace CookiesCookbookApp
     {
         public static void Main(string[] args)
         {
+            var fileType = FileExtensions.JSON;
+            Console.WriteLine(fileType);
 
             IEnumerable<Ingredient> availableIngredients = [
                 new WheatFlour(),
@@ -17,7 +20,9 @@ namespace CookiesCookbookApp
             ];
 
             // print existing recipes
-            DisplayToUser.PrintSavedRecipesToConsole(availableIngredients);
+            string savedRecipesFilepath = $"./DataRepository/recipes.{fileType.ToString().ToLower()}";
+            List<string>? savedRecipes = ReadFile.AllLines(savedRecipesFilepath);
+            DisplayToUser.PrintSavedRecipesToConsole(availableIngredients, fileType);
 
             // print all ingredients
             Console.WriteLine("Create a new cookie recipe! Available ingredients are:");
@@ -39,7 +44,8 @@ namespace CookiesCookbookApp
             }
 
             IEnumerable<Ingredient> ingredientsSelected = availableIngredients.Where(ingredient =>  idsSelectedByUser.Contains(ingredient.Id));
-            
+            savedRecipesFilepath = $"./DataRepository/recipes.{fileType.ToString().ToLower()}";
+
             // print new recipe
             if(ingredientsSelected.Any())
             {
@@ -48,8 +54,14 @@ namespace CookiesCookbookApp
 
                 // store recipe to file
                 string recipeIds = String.Join(',', idsSelectedByUser);
-                string savedRecipesFilepath = "./DataRepository/recipes.txt";
-                WriteFile.Write(savedRecipesFilepath, recipeIds);
+                if(fileType.Equals(FileExtensions.TXT))
+                {
+                    WriteFile.AppendTotextFile(savedRecipesFilepath, recipeIds);
+                }
+                else if(fileType.Equals(FileExtensions.JSON))
+                {
+                    WriteFile.AppendToJsonFile(savedRecipesFilepath, recipeIds);
+                }
             }
             else
             {

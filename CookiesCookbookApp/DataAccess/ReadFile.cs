@@ -2,7 +2,7 @@ namespace DataAccess;
 
 public class ReadFile
 {
-    public static List<string>? Read(string path)
+    public static List<string>? AllLines(string path)
     {
         if(File.Exists(path))
         {
@@ -14,16 +14,27 @@ public class ReadFile
         }
     }
 
-    public static void PrintData(string path, string message)
+    public static string? AsText(string path)
     {
-        List<string>? data = Read(path);
-        if(data != null)
+        if(File.Exists(path))
         {
-            Console.WriteLine(message);
-            foreach (var line in data)
-            {
-                Console.WriteLine(line);
-            }
+            return File.ReadAllText(path);
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public static List<string>? AllLinesFromTextFile(string path)
+    {
+        if(File.Exists(path))
+        {
+            return [.. File.ReadAllLines(path)];
+        }
+        else
+        {
+            return null;
         }
     }
 }
